@@ -1,33 +1,33 @@
 #DEVELOP
-output "develop-vpc-id" {
+output "develop_vpc_id" {
   value = aws_vpc.develop-vpc.id
 }
 
-output "develop-private-subnet-id" {
+output "develop_private_subnet-id" {
   value = aws_subnet.develop-private-subnet.id
 }
 
-output "develop-public-subnet-id" {
+output "develop_public_subnet_id" {
   value = aws_subnet.develop-public-subnet.id
 }
 
-output "develop-security-group-id" {
-  value = aws_security_group.develop-security-group.id
+output "develop_security_group_id" {
+  value = aws_security_group.develop_security_group.id
 }
 
 #PROD
-output "prod-vpc-id" {
+output "prod_vpc_id" {
   value = aws_vpc.prod-vpc.id
 }
 
-output "prod-private-subnet-id" {
+output "prod_private_subnet_id" {
   value = aws_subnet.prod-private-subnet.id
 }
 
-output "prod-public-subnet-id" {
+output "prod_public_subnet_id" {
   value = aws_subnet.prod-public-subnet.id
 }
 
-output "prod-security-group-id" {
+output "prod_security_group_id" {
   value = aws_security_group.prod-security-group.id
 }
