@@ -12,7 +12,7 @@ output "develop_public_subnet_id" {
 }
 
 output "develop_security_group_id" {
-  value = aws_security_group.develop_security_group.id
+  value = aws_security_group.develop-security-group.id
 }
 
 #PROD
