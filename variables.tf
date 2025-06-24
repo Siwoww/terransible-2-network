@@ -4,8 +4,8 @@ variable "region" {
 
 variable "vpc_cidr" {
   default = {
-    develop = "10.100.1.0/16"
-    prod = "10.200.1.0/16"
+    develop = "10.100.0.0/16"
+    prod = "10.200.0.0/16"
   }
 }
 
