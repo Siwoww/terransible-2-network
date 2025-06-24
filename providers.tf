@@ -2,7 +2,7 @@ terraform {
   backend "s3" {
     bucket = "siwoww-temporary-bucket-name"
     key = "network/terraform.tfstate"
-    region = var.region
+    region = "eu-central-1"
   }
 }
 
