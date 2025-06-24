@@ -56,7 +56,7 @@ resource "aws_subnet" "develop-public-subnet" {
 
 resource "aws_subnet" "develop-private-subnet" {
   vpc_id = aws_vpc.develop-vpc.id
-  cidr_block = cidrsubnet(aws_vpc.develop-vpc.id, 8, 2)
+  cidr_block = cidrsubnet(aws_vpc.develop-vpc.cidr_block, 8, 2)
   
   tags = {
     Name = "develop-private-subnet"

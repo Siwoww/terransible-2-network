@@ -56,7 +56,7 @@ resource "aws_subnet" "prod-public-subnet" {
 
 resource "aws_subnet" "prod-private-subnet" {
   vpc_id = aws_vpc.prod-vpc.id
-  cidr_block = cidrsubnet(aws_vpc.prod-vpc.id, 8, 2)
+  cidr_block = cidrsubnet(aws_vpc.prod-vpc.cidr_block, 8, 2)
   
   tags = {
     Name = "prod-private-subnet"
