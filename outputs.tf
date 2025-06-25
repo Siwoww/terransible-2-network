@@ -3,7 +3,7 @@ output "develop_vpc_id" {
   value = aws_vpc.develop-vpc.id
 }
 
-output "develop_private_subnet-id" {
+output "develop_private_subnet_id" {
   value = aws_subnet.develop-private-subnet.id
 }
 
